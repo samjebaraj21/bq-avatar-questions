@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F7F5F0;
+  --bg-alt: #F0EDE6;
+  --surface: #FEFCF9;
+  --surface-hover: #FBF9F4;
+  --surface-alt: #F4F1EA;
+  --border-light: #E6E1D8;
+  --border: #D5CFC5;
+  --text: #1C1917;
+  --text-secondary: #6B6560;
+  --text-muted: #9C9590;
+  --primary: #7C5CFC;
+  --primary-hover: #6B4BE6;
+  --primary-light: #EDE9FE;
+  --primary-dark: #5B3FD4;
+  --accent: #F59E0B;
+  --accent-hover: #D97706;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-alt: var(--surface-alt);
+  --color-border-light: var(--border-light);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F0B1A;
+    --bg-alt: #1A1525;
+    --surface: #1A1525;
+    --surface-hover: #231D33;
+    --surface-alt: #2D2540;
+    --border-light: #2D2540;
+    --border: #3D3355;
+    --text: #F0EEF8;
+    --text-secondary: #B5ADD0;
+    --text-muted: #7B72A0;
+    --primary: #8B6FFF;
+    --primary-hover: #9D84FF;
+    --primary-light: #2D1F5E;
+    --primary-dark: #6B4FE6;
+    --accent: #FBBF24;
+    --accent-hover: #F59E0B;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
